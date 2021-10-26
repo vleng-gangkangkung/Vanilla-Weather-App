@@ -3,6 +3,19 @@ html {
 }
 body {
   color: white;
+  background: rgb(161, 161, 161);
+}
+
+small {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: small;
+}
+small a {
+  color: tomato;
 }
 #temperature-icon-description {
   padding-bottom: 30px;
