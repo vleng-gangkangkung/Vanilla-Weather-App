@@ -16,59 +16,177 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;600;700&family=Roboto+Condensed:wght@300;400&display=swap"
       rel="stylesheet"
     />
-
+ <script src="https://kit.fontawesome.com/eff8c6a9c0.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
     <div class="container">
+      
       <div class="panel">
-        <div class="row cities">
-          <div class="col-2"><a href="#">LONDON</a></div>
-          <div class="col-2"><a href="#">BEIJING</a></div>
-          <div class="col-2"><a href="#">TOKYO</a></div>
-          <div class="col-2"><a href="#">NEW YORK</a></div>
-        </div>
 
-        <div class="row search-bar">
+        <div class="row">
           <div class="col-md-10">
+             <div class="row" id="popular-cities">
+           <span class="cities"><a href="#" target="_self" id="london">LONDON</a></span>
+            <span class="cities"><a href="#" target="_self"id="new-york">NEW YORK</a></span>
+            <span class="cities"><a href="#" target="_self" id="beijing">BEIJING</a></span>
+            <span class="cities"><a href="#" target="_self" id="san-francisco">SAN FRANCISCO</a></span>
+           </div></div>
+          </div>
+        <div class="row search-bar">
+          <div class="col-md-9">
             <form>
               <div class="form-row">
                 <div class="col-8">
+                  <div class="form-group">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control searchCopy"
                     placeholder="Search city"
                   />
-                </div>
-                <div class="col">
-                  <input
-                    type="submit"
-                    class="form-control"
-                    placeholder="Search"
-                  />
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Current"
-                  />
-                </div>
+                </div></div>
+                  <div class="col-md-2"> 
+                        <div class="form-group search-bar">
+                          <input type="submit" value="search" class="searchCopy btn" id="submit-btn">
+                      </div>
+                      </div>
+                            <div class="col-md-1 "> <a href="#" >
+                             <i class="fas fa-location-arrow location-btn" id="current-location"></i></a>
+                            </div>
+                  
+               
               </div>
             </form>
           </div>
-          <div class="col-md-2">Daytime</div>
         </div>
 
         <div class="row">
-          <div class="col-8">
-            <h1>San Francisco</h1>
+          <div class="cityName">San Francisco</h1>
+        </div>
+
+        <! --- Middle Content section -- >
+<section id="temperature-icon-description" class="line-shadow">
+  <div class="container mid-section">
+       <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="temp">20<span class="celcius">&#8451;</span></div>
+                </div></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="weatherHeading">Partly cloudy</div>
+                </div>
+              </div>
+          
+
+         <! --- more info section-- >
+              <div class="row">
+                <div class="col-md-12">
+                      <div class="row weather-description">
+                  <div class="col"><div class="border-dates">
+                    <strong>Last updated</strong> Wednesday, 17:00 <br/>24 September
+                  </div></div>
+                  <div class="col">
+                    Precipitation: 1% , <br />59% Wind: 7 mph
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+    
+        <! --- 2nd col for icon-- >
+            <div class="col-md-5">
+              <div class="icon">
+                <img src="images/1.svg" alt="icon" width="270px" class="icon" />
+              </div>
+            </div>
+        <! --- end of 2nd col for icon-- >
+
+    </div></div>
+
+</section>
+
+<! --- Forecast- >
+
+<section id="forecast">
+  <div class="forecast-heading">FORECAST FOR THE WEEK</div>
+
+<! --- Day & Date --- >
+  <div class="row">
+          <div class="col forecast-dayDate border-dates">
+            <div class="day">THU</div>
+            <div class="date">26/09</div>
+          </div>
+          <div class="col forecast-dayDate border-dates">
+            <div class="day">FRI</div>
+            <div class="date">26/09</div>
+          </div>
+          <div class="col forecast-dayDate border-dates">
+            <div class="day">SAT</div>
+            <div class="date">26/09</div>
+          </div>
+          <div class="col forecast-dayDate border-dates">
+            <div class="day">SUN</div>
+            <div class="date">26/09</div>
+          </div>
+          <div class="col forecast-dayDate">
+            <div class="day">MON</div>
+            <div class="date">26/09</div>
+          </div></div>
+
+     <! --- icons -- >
+
+<div class="row">
+          <div class="col day1">
+            <img
+              src="images/1.svg"
+              alt="icon"
+              width="90px"
+              class="weather-icons"
+            />
+            <div class="forecast-temperature">18<span class="celcius">&#176;</div>
+          </div>
+          <div class="col day2">
+            <img
+              src="images/1.svg"
+              alt="icon"
+              width="90px"
+              class="weather-icons"
+            /> <div class="forecast-temperature">18<span class="celcius">&#176;</div>
+          </div>
+          <div class="col day3">
+            <img
+              src="images/4.svg"
+              alt="icon"
+              width="90px"
+              class="weather-icons"
+            /> <div class="forecast-temperature">18<span class="celcius">&#176;</div>
+          </div>
+          <div class="col day4">
+            <img
+              src="images/13.svg"
+              alt="icon"
+              width="90px"
+              class="weather-icons"
+            /> <div class="forecast-temperature">18<span class="celcius">&#176;</div>
+          </div>
+          <div class="col day5">
+            <img
+              src="images/36.svg"
+              alt="icon"
+              width="90px"
+              class="weather-icons"
+            /> <div class="forecast-temperature">18<span class="celcius">&#176;</div>
           </div>
         </div>
-      </div>
-    </div>
+  </div>
 
-    <script src="src/index.js"></script>
+
+
+  </section></div>
+  <small>Coded and designed by <a href="https://vleng.co.uk">Vanessa Leng</a> | <a href="https://github.com/vleng-gangkangkung/my-weather-app-test">Open Source Code</a></small>
+   </div> <script src="src/index.js"></script>
   </body>
 </html>
