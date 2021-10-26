@@ -21,9 +21,54 @@
   </head>
 
   <body>
-    <div><h1>Weather App</h1></div>
-    <button type="button" class="btn btn-primary">Click Here</button>
-    <h1>San Francisco</h1>
+    <div class="container">
+      <div class="panel">
+        <div class="row cities">
+          <div class="col-2"><a href="#">LONDON</a></div>
+          <div class="col-2"><a href="#">BEIJING</a></div>
+          <div class="col-2"><a href="#">TOKYO</a></div>
+          <div class="col-2"><a href="#">NEW YORK</a></div>
+        </div>
+
+        <div class="row search-bar">
+          <div class="col-md-10">
+            <form>
+              <div class="form-row">
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search city"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="submit"
+                    class="form-control"
+                    placeholder="Search"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Current"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2">Daytime</div>
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+            <h1>San Francisco</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
